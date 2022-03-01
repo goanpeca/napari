@@ -13,7 +13,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/napari-sphinx-theme.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
@@ -128,13 +129,12 @@
     </nav>
     
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="napari-page">
+        
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form
+          <!-- Only show if we have sidebars configured, else just a small margin  -->
+          <div class="bd-sidebar">
+            <div class="sidebar-start-items"><form
   class="search"
   action="../../search.html"
   method="get"
@@ -433,19 +433,19 @@
 
   </div>
 </nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
             </div>
-            
+            <div class="sidebar-end-items">
+            </div>
+          </div>
           
+        
 
+        
+        <div class="bd-toc">
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
             
+            <div class="toc-item">
               
-              <div class="toc-item">
-                
 <div class="tocsection onthispage mt-5 pt-1 pb-3">
     On this page
 </div>
@@ -506,24 +506,24 @@
 </ul>
 
 </nav>
-              </div>
-              
-              <div class="toc-item">
-                
-              </div>
-              
+            </div>
             
-          </div>
+            <div class="toc-item">
+              
+            </div>
+            
           
+        </div>
+        
 
+        
+        
           
-          
+        
+        <main class="col-md-9 col-xl-7 bd-content" role="main">
             
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+            <div>
               
-              <div>
-                
   <div class="tex2jax_ignore mathjax_ignore section" id="annotating-videos-with-napari">
 <h1>Annotating videos with napari<a class="headerlink" href="#annotating-videos-with-napari" title="Permalink to this headline">¶</a></h1>
 <p><strong>Note</strong>: this tutorial has been updated and is now compatible with napari &gt; 0.4.5 and magicgui &gt; 0.2.5. For details, see <a class="reference external" href="https://github.com/napari/napari.github.io/pull/114">this pull request</a>.</p>
@@ -916,10 +916,10 @@ We can enter the command either in the script (e.g., bind a save function to a h
 </div>
 
 
-              </div>
-              
-              
-              <!-- Previous / next buttons -->
+            </div>
+            
+            
+            <!-- Previous / next buttons -->
 <div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="index.html" title="previous page">
         <svg
@@ -961,11 +961,10 @@ We can enter the command either in the script (e.g., bind a save function to a h
     </svg>
     </a>
 </div>
-              
-          </main>
-          
+            
+        </main>
+        
 
-      </div>
     </div>
 
     <script src="../../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">

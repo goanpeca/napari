@@ -13,7 +13,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/napari-sphinx-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
@@ -128,13 +129,12 @@
     </nav>
     
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="napari-page">
+        
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form
+          <!-- Only show if we have sidebars configured, else just a small margin  -->
+          <div class="bd-sidebar">
+            <div class="sidebar-start-items"><form
   class="search"
   action="../search.html"
   method="get"
@@ -222,19 +222,19 @@
 
   </div>
 </nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
             </div>
-            
+            <div class="sidebar-end-items">
+            </div>
+          </div>
           
+        
 
+        
+        <div class="bd-toc">
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
             
+            <div class="toc-item">
               
-              <div class="toc-item">
-                
 <div class="tocsection onthispage mt-5 pt-1 pb-3">
     On this page
 </div>
@@ -254,24 +254,24 @@
 </ul>
 
 </nav>
-              </div>
-              
-              <div class="toc-item">
-                
-              </div>
-              
+            </div>
             
-          </div>
+            <div class="toc-item">
+              
+            </div>
+            
           
+        </div>
+        
 
+        
+        
           
-          
+        
+        <main class="col-md-9 col-xl-7 bd-content" role="main">
             
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+            <div>
               
-              <div>
-                
   <div class="tex2jax_ignore mathjax_ignore section" id="manifest-reference">
 <span id="plugin-manifest"></span><h1>Manifest Reference<a class="headerlink" href="#manifest-reference" title="Permalink to this headline">¶</a></h1>
 <div class="admonition important">
@@ -345,8 +345,8 @@ more than a single contribution type).</p>
 manifest formats, though YAML is the “default” and more common format.</p>
 </div>
 <div class="tabbed-set docutils">
-<input checked="checked" id="61987888-cda1-42d2-a59b-19bd9a9bc18e" name="3895775e-2aab-4004-b651-e7fe68b2dc10" type="radio">
-</input><label class="tabbed-label" for="61987888-cda1-42d2-a59b-19bd9a9bc18e">
+<input checked="checked" id="5f1dda25-1515-4d70-9cf3-ef83dbc00996" name="c517dd17-062a-4cea-bd4c-4401f1cf303f" type="radio">
+</input><label class="tabbed-label" for="5f1dda25-1515-4d70-9cf3-ef83dbc00996">
 yaml</label><div class="tabbed-content docutils">
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-plugin</span><span class="w"></span>
 <span class="nt">display_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Example Plugin</span><span class="w"></span>
@@ -417,8 +417,8 @@ yaml</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="d9328521-e5e1-4e72-a74f-60aaeffdd7ee" name="3895775e-2aab-4004-b651-e7fe68b2dc10" type="radio">
-</input><label class="tabbed-label" for="d9328521-e5e1-4e72-a74f-60aaeffdd7ee">
+<input id="17bf7c20-62fd-4928-b21d-271b808eaea5" name="c517dd17-062a-4cea-bd4c-4401f1cf303f" type="radio">
+</input><label class="tabbed-label" for="17bf7c20-62fd-4928-b21d-271b808eaea5">
 toml</label><div class="tabbed-content docutils">
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">display_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;Example Plugin&#39;</span><span class="w"></span>
 <span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;example-plugin&#39;</span><span class="w"></span>
@@ -515,10 +515,10 @@ toml</label><div class="tabbed-content docutils">
 </div>
 
 
-              </div>
-              
-              
-              <!-- Previous / next buttons -->
+            </div>
+            
+            
+            <!-- Previous / next buttons -->
 <div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="first_plugin.html" title="previous page">
         <svg
@@ -560,11 +560,10 @@ toml</label><div class="tabbed-content docutils">
     </svg>
     </a>
 </div>
-              
-          </main>
-          
+            
+        </main>
+        
 
-      </div>
     </div>
 
     <script src="../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">

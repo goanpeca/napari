@@ -13,7 +13,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/napari-sphinx-theme.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
@@ -127,13 +128,12 @@
     </nav>
     
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="napari-page">
+        
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form
+          <!-- Only show if we have sidebars configured, else just a small margin  -->
+          <div class="bd-sidebar">
+            <div class="sidebar-start-items"><form
   class="search"
   action="../../../../search.html"
   method="get"
@@ -165,27 +165,27 @@
     
   </div>
 </nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
             </div>
-            
-          
-
-          
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
+            <div class="sidebar-end-items">
+            </div>
           </div>
           
+        
 
+        
+        <div class="bd-toc">
           
+        </div>
+        
+
+        
+        
           
+        
+        <main class="col-md-9 col-xl-7 bd-content" role="main">
             
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+            <div>
               
-              <div>
-                
   <h1>Source code for napari.layers.tracks.tracks</h1><div class="highlight"><pre>
 <span></span><span class="c1"># from napari.layers.base.base import Layer</span>
 <span class="c1"># from napari.utils.events import Event</span>
@@ -817,17 +817,16 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">events</span><span class="o">.</span><span class="n">color_by</span><span class="p">()</span></div>
 </pre></div>
 
-              </div>
-              
-              
-              <!-- Previous / next buttons -->
+            </div>
+            
+            
+            <!-- Previous / next buttons -->
 <div class='prev-next-area'>
 </div>
-              
-          </main>
-          
+            
+        </main>
+        
 
-      </div>
     </div>
 
     <script src="../../../../_static/scripts/napari-sphinx-theme.js"></script><footer class="napari-footer">
